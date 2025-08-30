@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DANJ Security Cameras</title>
+  <style>
+    /* Background Image & Overlay */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      min-height: 100vh;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background-color: rgba(11, 61, 145, 0.85);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      fill: #00CFFF;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: rgba(255 255 255 / 0.15);
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      font-weight: 600;
+      color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      backdrop-filter: blur(5px);
+      position: sticky;
+      top: 80px;
+      z-index: 90;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00CFFF;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto 60px;
+      background: rgba(0 0 0 / 0.5);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+      color: white;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #00CFFF;
+      border-bottom: 3px solid #00CFFF;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .banner {
+      background: url('https://images.unsplash.com/photo-1581093588401-cf29b4ec0a62?auto=format&fit=crop&w=900&q=80') no-repeat center/cover;
+      height: 240px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-shadow: 0 0 12px rgba(0,0,0,0.9);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255 255 255 / 0.3);
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+    /* Gallery styles */
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      border-radius: 12px;
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 2C8.13 2 5 5.13 5 9v6c0 3.87 3.13 7 7 7s7-3.13 7-7v-6c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5v6c0 2.76-2.24 5-5 5s-5-2.24-5-5v-6c0-2.76 2.24-5 5-5z"/>
+      <circle cx="12" cy="14" r="3"/>
+    </svg>
+    <h1>DANJ</h1>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="home" class="banner">
+      Secure Your World with DANJ Security Cameras
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <ul>
+        <li><strong>Indoor Camera</strong> – HD video, easy installation</li>
+        <li><strong>Outdoor Camera</strong> – Weatherproof, night vision</li>
+        <li><strong>Wireless Camera</strong> – Remote access, motion alerts</li>
+        <li><strong>Night Vision Camera</strong> – Clear night footage</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>Security Camera Models</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Indoor Security Camera" />
+        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=400&q=80" alt="Outdoor Security Camera" />
+        <img src="https://images.unsplash.com/photo-1590080877777-fcf9b77e2455?auto=format&fit=crop&w=400&q=80" alt="Wireless Security Camera" />
+        <img src="https://images.unsplash.com/photo-1588684833724-68319d3d540e?auto=format&fit=crop&w=400&q=80" alt="Night Vision Camera" />
+        <img src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc0a54?auto=format&fit=crop&w=400&q=80" alt="360 Degree Camera" />
+        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=400&q=80" alt="Night View Security Camera" />
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>High-definition video quality</li>
+        <li>360° panoramic view for full coverage</li>
+        <li>Night vision capability for clear footage in darkness</li>
+        <li>Motion detection alerts</li>
+        <li>Easy installation</li>
+        <li>Remote access via mobile app</li>
+        <li>Weather-resistant design</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About DANJ</h2>
+      <p>
+        At DANJ, we are committed to providing top-quality security cameras to keep your world safe. 
+        Our products combine cutting-edge technology with user-friendly features to ensure your peace of mind.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> 7291832831</p>
+        <p><strong>Email:</strong> naveenjangra7291@gmail.com</p>
+        <p><strong>Address:</strong> A 101/1 Rajinder Park, Gurgaon</p>
+        <p><strong>Official Email:</strong> DANJ_offical@gmail.com</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 DANJ Security Cameras. All rights reserved.
+  </footer>
+</body>
+</html>
